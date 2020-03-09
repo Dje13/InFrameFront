@@ -3,8 +3,22 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  // API
+  apiUrl: 'https://localhost:44312/api/',
+
+  demandeTypeEndpoint: 'formconfig/',
+  ticketEndPoint: 'ticket/',
+  listeFormsEndPoint: '',
+  listeTypeForm: 'formtypes',
+  listeTickets: 'List',
+  demandeValuesEndpoint: ''
+
+
 };
+
+//https://localhost:44312/api/formconfig/demandtype/3
 
 /*
  * For easier debugging in development mode, you can import the following file
