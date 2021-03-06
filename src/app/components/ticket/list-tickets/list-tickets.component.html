@@ -8,13 +8,13 @@
                     <div class="col-md-6">
                         <label *ngIf="optionTypeFormLoaded" for="typeticket">Type de ticket</label>
                         <div class="form-group">
-                            <p-dropdown 
-                                id="typeticket" 
-                                name="typeticket" 
-                                title="Type de ticket" 
+                            <p-dropdown
+                                id="typeticket"
+                                name="typeticket"
+                                title="Type de ticket"
                                 class=""
-                                [options]="optionTypeForm" 
-                                optionLabel="name" 
+                                [options]="optionTypeForm"
+                                optionLabel="name"
                                 placeholder="Type de formulaire"
                                 [(ngModel)]="optionSelected">
                             </p-dropdown>
@@ -43,7 +43,7 @@
                         [columnDefs]="columnDefs"
                         [rowData]="rowDataTicket"
                         [rowSelection]="rowSelection"
-                        (selectionChanged)="onSelectionChanged($event)"
+                        (selectionChanged)="onSelectionChanged()"
                         (gridReady)="onGridReady($event)">
                     </ag-grid-angular>
                 </div>

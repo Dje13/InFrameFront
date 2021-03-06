@@ -26,13 +26,13 @@ export class ListTicketsComponent implements OnInit {
   rowDataTicket: any;
   rowDataLoaded: boolean = false;
   rowDataSubscription: Subscription;
-  private gridApi;
-  private gridColumnApi;
-  private rowSelection;
+  public gridApi;
+  public gridColumnApi;
+  public rowSelection;
 
   // Définition de l'apparence du tableau
   headerHeight: 175;
-  //Définition des colonnes 
+  //Définition des colonnes
   columnDefs = [
     { headerName: '#', field: 'id', resizable: true, sortable: true, filter: true, width: 40 },
     { headerName: 'Titre', field: 'ticketTitle', resizable: true, sortable: true, filter: true },
@@ -74,7 +74,7 @@ export class ListTicketsComponent implements OnInit {
   }
 
   /**
-   * Convertit 
+   * Convertit
    *  la liste des données reçues par le Json
    *  en tableau clef/valeur
    *  pour affichage dans une liste d'option PrimeNG
@@ -90,7 +90,7 @@ export class ListTicketsComponent implements OnInit {
 
   /**
    * Appelé pour création d'une nouvelle intervention ( demand / ticket)
-   * @param form 
+   * @param form
    */
   onSubmitNew(form: NgForm) {
     const type = this.optionSelected['name'];
