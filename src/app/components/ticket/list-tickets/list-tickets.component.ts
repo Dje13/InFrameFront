@@ -22,7 +22,7 @@ export class ListTicketsComponent implements OnInit {
   typeFormSubsisption: Subscription;
 
   // **** Gestion de la grille
-  @ViewChild('agGrid', { static: false }) agGrid: AgGridAngular;
+  @ViewChild('agGrid') agGrid: AgGridAngular;
   rowDataTicket: any;
   rowDataLoaded: boolean = false;
   rowDataSubscription: Subscription;
