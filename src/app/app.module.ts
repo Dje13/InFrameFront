@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GenericInputComponent } from './components/Commmon/generic-input/generic-input.component';
+import { GenericInputComponent } from './components/Common/generic-input/generic-input.component';
 import { TicketFormComponent } from './components/ticket/ticket-form/ticket-form.component';
 import { DemandFormComponent } from './demand-form/demand-form.component';
 import { HeaderComponent } from './components/General/header/header.component';
@@ -34,6 +34,7 @@ import { SpinnerModule } from 'primeng/spinner';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputMaskModule } from 'primeng/inputmask';
 import { FormConfigService } from './services/form-config.service';
+import { ConfigService } from './services/config.service';
 import { HttpClientModule } from '@angular/common/http';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { MenubarModule } from 'primeng/menubar';
@@ -90,7 +91,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     AgGridModule.withComponents([])
   ],
-  providers: [FormConfigService],
+  providers: [FormConfigService,ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

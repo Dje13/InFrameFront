@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Field } from '../models/field.model';
 import { Group } from '../models/group.model';
 import { FormConfig } from '../models/formConfig.model';
-import { GenericInputComponent } from '../components/Commmon/generic-input/generic-input.component';
+import { GenericInputComponent } from '../components/Common/generic-input/generic-input.component';
 import { FormConfigService } from '../services/form-config.service';
 declare var require: any;
 

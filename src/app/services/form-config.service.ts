@@ -41,7 +41,7 @@ export class FormConfigService {
   }
 
   /**
-   * Charge l'ensemble des formulaires 
+   * Charge l'ensemble des formulaires
    */
   public getJSONListForm(): Observable<any> {
     return this.http.get<any>(this.listeFormsAPI);
